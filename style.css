@@ -1,0 +1,60 @@
+:root {
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #A9DDFF;
+    --color-primary-light: #78CAFF;
+    --color-primary: #0FA1FF;
+    --color-primary-dark: #FF4F00;
+    --color-primary-darker: #D94400;
+    --color-secondary: #FFB700;
+    --color-secondary-dark: #D99C00;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: ##f6ffff;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+    font-size: 60%; 
+    /* controle das medidas rem */
+    /* fonte padrão: 16px - 100% - 1rem */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    background-color: var( --color-background);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    /*ambas só funcionam com a propri. display*/
+}
+ 
+body,
+input,
+button,
+textarea {
+    /* font: 500 1.6rem Poppins; */
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    color: var(--color-text-base);
+}
+
+#container {
+    width: 90vw;
+    max-width: 700px;
+}

@@ -1,7 +1,7 @@
 :root {
     --color-background: #F0F0F7;
-    --color-primary-lighter: #A9DDFF;
-    --color-primary-light: #78CAFF;
+    --color-primary-lighter: #f76724;
+    --color-primary-light: #FF9D70;
     --color-primary: #0FA1FF;
     --color-primary-dark: #FF4F00;
     --color-primary-darker: #D94400;
@@ -9,9 +9,9 @@
     --color-secondary-dark: #D99C00;
     --color-title-in-primary: #FFFFFF;
     --color-text-in-primary: ##f6ffff;
-    --color-text-title: #32264D;
+    --color-text-title: #f6ffff;
     --color-text-complement: #9C98A6;
-    --color-text-base: #6A6180;
+    --color-text-base: #f6ffff;
     --color-line-in-white: #E6E6F0;
     --color-input-background: #F8F8FC;
     --color-button-text: #FFFFFF;
@@ -36,7 +36,7 @@ body {
 
 body {
     height: 100vh;
-    background-color: var( --color-background);
+    background-color: var(--color-background);
     display: flex;
     align-items: center; 
     justify-content: center;

@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <h1 align="center">
-    <img alt="Logo Proffy" title="#Proffy" src=".github/capa.png" width="260px" />
+    <img alt="Logo Proffy" title="#Proffy" src=".github/capa.png" width="1080px" />
 </h1>
 
 <h4 align="center">

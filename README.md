@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <h1 align="center">
-    <img alt="Logo Proffy" title="#Proffy" src=".github/capa.png" width="1080px" />
+    <img alt="Logo Proffy" title="#Proffy" src=".github/capa.png" width="920px" />
 </h1>
 
 <h4 align="center">
@@ -35,7 +35,7 @@
 <br>
 
 <p align="center">
-  <img alt="Proffy" src="." width="100%">
+  <img alt="Proffy" src="./github/proffy.png" width="100%">
 </p>
 
 ## 📚 Tecnologias

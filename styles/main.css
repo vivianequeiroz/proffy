@@ -18,6 +18,9 @@
     --color-box-base: #FFFFFF;
     --color-box-footer: #FAFAFC;
     --color-small-info: #C1BCCC;
+    --color-main-text: #232325;
+    --color-header: #00416B;
+    --color-span-text: #00548B; 
     font-size: 60%; 
     /* controle das medidas rem */
     /* fonte padrão: 16px - 100% - 1rem */

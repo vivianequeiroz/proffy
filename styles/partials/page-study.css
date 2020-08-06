@@ -8,7 +8,8 @@
 
     display: flex;
     flex-direction: column;
-    padding: 3.2rem 0;
+    padding-top: 0;
+    padding-bottom: 3.2rem;
 }
 
 .page-header .top-bar-container {
@@ -19,7 +20,7 @@
     align-items: center; 
     justify-content: space-between;
 
-    padding: 1.6rem 0;
+    padding: 1.2rem 0;
 }
 
 .page-header .top-bar-container a {
@@ -117,4 +118,104 @@
     position: absolute;
     left: 1.6rem;
     bottom: 0px;
+}
+
+
+
+
+#page-study main,
+textarea {
+    margin: 3.2rem auto;
+    width: 90%;
+    color: var(--color-main-text);
+} 
+
+.teacher-item {
+    background-color: var(--color-box-base);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: .8rem;
+    margin-top: 2.4rem;
+}
+
+.teacher-item header {
+    padding: 3.2rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.teacher-item header img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.teacher-item header div {
+    margin-left: 2.4rem; 
+}
+
+.teacher-item header div strong {
+    font: 700 2.4rem Archivo;
+    display: block;
+    color: var(--color-header);
+}
+
+.teacher-item header div span {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: .4rem;
+    color: var(--color-span-text);
+}
+
+.teacher-item p {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: var(--color-span-text);
+}
+
+.teacher-item footer {
+    padding: 3.2rem 2rem;
+    background-color: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 3.2rem;
+
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teacher-item footer p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--color-text-complement);
+}
+
+.teacher-item footer p strong {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    display: block;
+}
+
+.teacher-item footer button {
+    width: 20rem;
+    height: 5.6rem;
+    background: var(--color-secondary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: .8rem;
+    cursor: pointer;
+    font: 700 1.4rem Archivo;
+
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+
+    text-decoration: none;
+
+    transition: background 0.2s;
+    margin-left: 1.6rem;
+}
+
+.teacher-item footer button:hover {
+    background: var(--color-secondary-dark);
 }

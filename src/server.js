@@ -1,15 +1,53 @@
+const proffys = [
+    { 
+    name: "João Bispo",
+    avatar: "https://avatars2.githubusercontent.com/u/43768058?s=460&u=674587f6f7767a469c56472c4314375e89a08b74&v=4"  , 
+    whatsapp: 11000000000,
+    bio: "Capaz de fazer abstrações mais rápido que o Frontier, João vai utilizar das Exatas e da Filosofia para te explicar porque o sentido da vida é 42.",
+    subject: "Matemática", 
+    cost: "424,24",
+    weekday: [0],
+    time_from: [720],
+    time_to: [1220], 
+    },
+
+    { 
+    name: "Átila Iamarino",
+    avatar: "https://olz34z4bb51rsojq274o1g19-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/Atila_Iamarino-300x300.jpg"  , 
+    whatsapp: 11000000001,
+    bio: "O biólogo mais popular do país vai ensinar desde o funcionamento de vacinas até como você pode fazer um sabre de luz. Tudo para evidenciar o quão incrível pode ser a ciência que estuda a vida",
+    subject: "Biologia", 
+    cost: "535,35",
+    weekday: [1],
+    time_from: [720],
+    time_to: [1220], 
+    },
+]
+
+function pageLanding(req, res) {
+    return res.render("index.html")
+} 
+function pageStudy(req, res) {
+    return res.render("study.html",  { proffys })
+}
+function pageGiveClasses(req, res) {
+    return res.render("give-classes.html")
+}
+
 const express = require('express')
 const server = express()
 
-server.use(express.static("public"))
-.get("/", (req, res) => {
-    return res.sendFile(__dirname + "/views/index.html")             
+const nunjucks = require('nunjucks')
+nunjucks.configure('src/views', {
+    express: server,
+    noCache: true,
 })
-.get("/study", (req, res)=> {
-    return res.sendFile(__dirname + "/views/study.html")
-})
-.get("/give-classes", (req, res)=> {
-    return res.sendFile(__dirname + "/views/give-classes.html")
-})
- 
+
+server
+//configuração de arq. estáticos
+.use(express.static("public"))
+//rotas da aplicação
+.get("/", pageLanding) 
+.get("/study", pageStudy)
+.get("/give-classes", pageGiveClasses)
 .listen(5500)

@@ -68,50 +68,31 @@
         </header>
 
         <main>
-            <article class="teacher-item">
-                <header>
-                    <img 
-                        src="https://avatars2.githubusercontent.com/u/43768058?s=460&u=674587f6f7767a469c56472c4314375e89a08b74&v=4" 
-                        alt="João Bispo">
-                    <div>
-                        <strong>João Bispo</strong>
-                        <span>Matemática</span>
-                    </div>
-                </header>
-            
-                <p>Engenheiro de Software aspirante a Filósofo<br>
-                    <br>Capaz de fazer abstrações mais rápido que o Frontier, João vai utilizar das Exatas e da Filosofia para te explicar porque o sentido da vida é 42.</p>
-            
-                <footer>
-                    <p>Investimento hora/aula<strong>R$ 424,24</strong>
-                    </p>
-                    <button type="button">
-                        <img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entrar em contato
-                    </button>
-                </footer>
-            </article>
 
-            <article class="teacher-item">
-                <header>
-                    <img 
-                        src="https://olz34z4bb51rsojq274o1g19-wpengine.netdna-ssl.com/wp-content/uploads/2020/05/Atila_Iamarino-300x300.jpg" 
-                        alt="João Bispo">
-                    <div>
-                        <strong>Átila Iamarino</strong>
-                        <span>Biologia</span>
-                    </div>
-                </header>
-                <p>Biólogo, cientista e pesquisador que vai te fazer amar a Biologia<br>
-                    <br>O biólogo mais popular do país vai ensinar desde o funcionamento de vacinas até como você pode fazer um sabre de luz. Tudo para evidenciar o quão incrîvel pode ser a ciência que estuda a vida. </p>
-                <footer>
-                    <p>Valor do investimento hora/aula<strong>R$ 535,35</strong>
-                    </p>
-                    <button type="button">
-                        <img src="/images/icons/whatsapp.svg" alt="Whatsapp">Entrar em contato
-                    </button>
-                </footer>
+            {%for proffy in proffys %}
+                <article class="teacher-item">
+                    <header>
+                        <img 
+                            src="{{proffy.avatar}}" 
+                            alt="{{proffy.name}}">
+                        <div>
+                            <strong>{{proffy.name}}</strong>
+                            <span>{{proffy.subject}}</span>
+                        </div>
+                    </header>
                 
-            </article>
+                    <p>{{proffy.bio}}</p>
+                
+                    <footer>
+                        <p>Investimento hora/aula<strong>R$ {{proffy.cost }} </strong>
+                        </p>
+                        <a href="https://api.whatsapp.com/send?1=pt_BR&phone=55{{proffy.whatsapp}}&text=Olá! Tenho interesse na sua aula de {{proffy.subject}}, {{proffy.name}} :D"
+                        class="button" target="_blank">
+                            <img src="/images/icons/whatsapp.svg" alt="WhatsApp">Entrar em contato
+                        </a>
+                    </footer>
+                </article>
+            {%endfor%}
 
         </main>
 

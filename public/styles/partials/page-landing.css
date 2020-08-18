@@ -2,7 +2,8 @@
     background-color: var(--color-primary);
 }
 
-#page-landing #container {
+#page-landing #container 
+textarea{
     color: var(--color-text-in-primary);
 }
 
